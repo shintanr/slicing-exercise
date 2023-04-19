@@ -37,6 +37,7 @@ class _DataValidateState extends State<DataValidate> {
           child: Column(
             children: [
               TextFormField(
+                autofocus: true,
                 decoration: InputDecoration(
                     hintText: 'Nama ',
                     labelText: 'Nama',
