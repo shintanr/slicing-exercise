@@ -5,6 +5,7 @@ import 'package:awalnya_sih_coba2/pages/data_validation.dart';
 
 import 'package:awalnya_sih_coba2/pages/drop_down_button.dart';
 import 'package:awalnya_sih_coba2/pages/focusnode_autofocused.dart';
+import 'package:awalnya_sih_coba2/pages/get_value_from_textformfield.dart';
 import 'package:awalnya_sih_coba2/pages/listview.dart';
 import 'package:awalnya_sih_coba2/pages/listview_builder.dart';
 import 'package:awalnya_sih_coba2/pages/textfromfield_change.dart';
@@ -22,8 +23,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: DemoChangeTFF(),
-    );
+        debugShowCheckedModeBanner: false, home: DemoGetValueTFF());
   }
 }
