@@ -1,17 +1,4 @@
-import 'package:awalnya_sih_coba2/pages/alert_dialog.dart';
-import 'package:awalnya_sih_coba2/pages/button.dart';
-import 'package:awalnya_sih_coba2/pages/card.dart';
-import 'package:awalnya_sih_coba2/pages/data_validation.dart';
-
-import 'package:awalnya_sih_coba2/pages/drop_down_button.dart';
-import 'package:awalnya_sih_coba2/pages/first_page.dart';
-import 'package:awalnya_sih_coba2/pages/focusnode_autofocused.dart';
-import 'package:awalnya_sih_coba2/pages/get_value_from_textformfield.dart';
-import 'package:awalnya_sih_coba2/pages/listview.dart';
-import 'package:awalnya_sih_coba2/pages/listview_builder.dart';
-import 'package:awalnya_sih_coba2/pages/second_page.dart';
-import 'package:awalnya_sih_coba2/pages/textfromfield_change.dart';
-
+import 'package:awalnya_sih_coba2/pages/navigatorpop.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,15 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.cyan,
       ),
-      initialRoute: '/',
-      routes: {
-        '/': (BuildContext context) {
-          return FirstPage();
-        },
-        '/second': (BuildContext context) {
-          return SecondPage();
-        },
-      },
+      home: NavigatorPOPTakeAData(),
       debugShowCheckedModeBanner: false,
     );
   }

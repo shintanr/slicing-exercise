@@ -8,14 +8,28 @@ class SecondPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Demo Navigator SP'),
+        title: Text('Layar 2'),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Text('Launch Screen'),
+        child: Column(
+          children: [
+            Text('Pilih nilai yang akan dikembalikan'),
+            Container(
+              height: 15,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context, 99);
+              },
+              child: Text('Nilai 99'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context, 88);
+              },
+              child: Text('Nilai 88'),
+            ),
+          ],
         ),
       ),
     );
